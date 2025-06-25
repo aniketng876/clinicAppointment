@@ -1,0 +1,245 @@
+2025-06-25 19:20:36 [::1][-][-][error][Error] Error: Class "backend\assets\AppAsset" not found in C:\wamp64\www\projects\clinicAppointment\backend\views\layouts\blank.php:9
+Stack trace:
+#0 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\wamp64\\www\\p...', Array)
+#2 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile('C:\\wamp64\\www\\p...', Array, Object(backend\controllers\SiteController))
+#3 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#4 C:\wamp64\www\projects\clinicAppointment\backend\controllers\SiteController.php(103): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#9 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#10 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\wamp64\www\projects\clinicAppointment\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2025-06-25 19:20:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qn4upf8sfjh8qlmh1ba2rars6f'
+    '_identity-frontend' => '2c38d870512a5c51ff452c76f3743689684eb4a568c0a0b01f85997ecaf66cc4a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"JrgCWLwGABr5KlPMgAlleJZ4J4exGVzI\",2592000]\";}'
+    '_csrf-frontend' => 'a059d97c7fb734f81663a6ef6659ca49d0577fa57cad482e163354a0dd0d931ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yo79utWejUoi6iZnUBmTky4eFxZ4NGoo\";}'
+    '_csrf' => '3fa980ef023f1c8f2382b28f67e3b2b4efa58e4261cbb158e1d781362ed82b6ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"uraq9l53kXt0kQsPCVLm_fxxtDSzK4aZ\";}'
+    'PHPSESSID' => 'hbsm6i7d74l9nmdledorbjafqn'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qn4upf8sfjh8qlmh1ba2rars6f; _identity-frontend=2c38d870512a5c51ff452c76f3743689684eb4a568c0a0b01f85997ecaf66cc4a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22JrgCWLwGABr5KlPMgAlleJZ4J4exGVzI%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a059d97c7fb734f81663a6ef6659ca49d0577fa57cad482e163354a0dd0d931ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yo79utWejUoi6iZnUBmTky4eFxZ4NGoo%22%3B%7D; _csrf=3fa980ef023f1c8f2382b28f67e3b2b4efa58e4261cbb158e1d781362ed82b6ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uraq9l53kXt0kQsPCVLm_fxxtDSzK4aZ%22%3B%7D; PHPSESSID=hbsm6i7d74l9nmdledorbjafqn'
+    'PATH' => 'C:\\Program Files\\Eclipse Adoptium\\jdk-19.0.2.7-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVM;C:\\Program Files\\nodejs;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php8.1.28;C:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\ServiceNow\\agent-client-collector\\bin;C:\\Program Files\\ServiceNow\\agent-client-collector\\embedded\\bin;C:\\Users\\Default\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Default\\.dotnet\\tools;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.1.28 mod_fcgid/2.3.10-dev Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.1.28 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/projects/clinicAppointment/backend/web/index.php'
+    'REMOTE_PORT' => '57711'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/projects/clinicAppointment/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/projects/clinicAppointment/backend/web/index.php'
+    'PHP_SELF' => '/projects/clinicAppointment/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1750879236.5694
+    'REQUEST_TIME' => 1750879236
+]
+2025-06-25 19:23:34 [::1][4][9ctms06lvdcodn36v4sonmt2j7][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/settings in C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('settings', Array)
+#1 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/settings', Array)
+#2 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\projects\clinicAppointment\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\projects\clinicAppointment\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2025-06-25 19:23:34 [::1][4][9ctms06lvdcodn36v4sonmt2j7][info][application] $_GET = [
+    'r' => 'site/settings'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qn4upf8sfjh8qlmh1ba2rars6f'
+    '_identity-frontend' => '2c38d870512a5c51ff452c76f3743689684eb4a568c0a0b01f85997ecaf66cc4a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"JrgCWLwGABr5KlPMgAlleJZ4J4exGVzI\",2592000]\";}'
+    '_csrf-frontend' => 'a059d97c7fb734f81663a6ef6659ca49d0577fa57cad482e163354a0dd0d931ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yo79utWejUoi6iZnUBmTky4eFxZ4NGoo\";}'
+    '_csrf' => '3fa980ef023f1c8f2382b28f67e3b2b4efa58e4261cbb158e1d781362ed82b6ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"uraq9l53kXt0kQsPCVLm_fxxtDSzK4aZ\";}'
+    'PHPSESSID' => 'hbsm6i7d74l9nmdledorbjafqn'
+    'advanced-backend' => '9ctms06lvdcodn36v4sonmt2j7'
+    '_identity-backend' => 'a569f35123839eac883db6a3f0a1ef37b2f41a4d4e2d195c8c2221a485442480a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"JrgCWLwGABr5KlPMgAlleJZ4J4exGVAZ\",2592000]\";}'
+    '_csrf-backend' => 'd142d4bee51d291b8ab0c4d916f9d0b72dd288e32c946065ceb70dcf208ada5aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrE_S-G_qwFmO3WHln1NJy-WhuD30-R9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+    '__authKey' => 'JrgCWLwGABr5KlPMgAlleJZ4J4exGVAZ'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/projects/clinicAppointment/backend/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qn4upf8sfjh8qlmh1ba2rars6f; _identity-frontend=2c38d870512a5c51ff452c76f3743689684eb4a568c0a0b01f85997ecaf66cc4a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22JrgCWLwGABr5KlPMgAlleJZ4J4exGVzI%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a059d97c7fb734f81663a6ef6659ca49d0577fa57cad482e163354a0dd0d931ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yo79utWejUoi6iZnUBmTky4eFxZ4NGoo%22%3B%7D; _csrf=3fa980ef023f1c8f2382b28f67e3b2b4efa58e4261cbb158e1d781362ed82b6ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uraq9l53kXt0kQsPCVLm_fxxtDSzK4aZ%22%3B%7D; PHPSESSID=hbsm6i7d74l9nmdledorbjafqn; advanced-backend=9ctms06lvdcodn36v4sonmt2j7; _identity-backend=a569f35123839eac883db6a3f0a1ef37b2f41a4d4e2d195c8c2221a485442480a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22JrgCWLwGABr5KlPMgAlleJZ4J4exGVAZ%22%2C2592000%5D%22%3B%7D; _csrf-backend=d142d4bee51d291b8ab0c4d916f9d0b72dd288e32c946065ceb70dcf208ada5aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrE_S-G_qwFmO3WHln1NJy-WhuD30-R9%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Eclipse Adoptium\\jdk-19.0.2.7-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVM;C:\\Program Files\\nodejs;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php8.1.28;C:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\ServiceNow\\agent-client-collector\\bin;C:\\Program Files\\ServiceNow\\agent-client-collector\\embedded\\bin;C:\\Users\\Default\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Default\\.dotnet\\tools;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.1.28 mod_fcgid/2.3.10-dev Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.1.28 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/projects/clinicAppointment/backend/web/index.php'
+    'REMOTE_PORT' => '58014'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsettings'
+    'REQUEST_URI' => '/projects/clinicAppointment/backend/web/index.php?r=site%2Fsettings'
+    'SCRIPT_NAME' => '/projects/clinicAppointment/backend/web/index.php'
+    'PHP_SELF' => '/projects/clinicAppointment/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1750879414.5757
+    'REQUEST_TIME' => 1750879414
+]
+2025-06-25 19:23:36 [::1][4][9ctms06lvdcodn36v4sonmt2j7][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/settings in C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('settings', Array)
+#1 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/settings', Array)
+#2 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\projects\clinicAppointment\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\projects\clinicAppointment\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\projects\clinicAppointment\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2025-06-25 19:23:36 [::1][4][9ctms06lvdcodn36v4sonmt2j7][info][application] $_GET = [
+    'r' => 'site/settings'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qn4upf8sfjh8qlmh1ba2rars6f'
+    '_identity-frontend' => '2c38d870512a5c51ff452c76f3743689684eb4a568c0a0b01f85997ecaf66cc4a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"JrgCWLwGABr5KlPMgAlleJZ4J4exGVzI\",2592000]\";}'
+    '_csrf-frontend' => 'a059d97c7fb734f81663a6ef6659ca49d0577fa57cad482e163354a0dd0d931ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yo79utWejUoi6iZnUBmTky4eFxZ4NGoo\";}'
+    '_csrf' => '3fa980ef023f1c8f2382b28f67e3b2b4efa58e4261cbb158e1d781362ed82b6ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"uraq9l53kXt0kQsPCVLm_fxxtDSzK4aZ\";}'
+    'PHPSESSID' => 'hbsm6i7d74l9nmdledorbjafqn'
+    'advanced-backend' => '9ctms06lvdcodn36v4sonmt2j7'
+    '_identity-backend' => 'a569f35123839eac883db6a3f0a1ef37b2f41a4d4e2d195c8c2221a485442480a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[4,\"JrgCWLwGABr5KlPMgAlleJZ4J4exGVAZ\",2592000]\";}'
+    '_csrf-backend' => 'd142d4bee51d291b8ab0c4d916f9d0b72dd288e32c946065ceb70dcf208ada5aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PrE_S-G_qwFmO3WHln1NJy-WhuD30-R9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+    '__authKey' => 'JrgCWLwGABr5KlPMgAlleJZ4J4exGVAZ'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:8080/projects/clinicAppointment/backend/web/index.php?r=site%2Fsettings'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qn4upf8sfjh8qlmh1ba2rars6f; _identity-frontend=2c38d870512a5c51ff452c76f3743689684eb4a568c0a0b01f85997ecaf66cc4a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22JrgCWLwGABr5KlPMgAlleJZ4J4exGVzI%22%2C2592000%5D%22%3B%7D; _csrf-frontend=a059d97c7fb734f81663a6ef6659ca49d0577fa57cad482e163354a0dd0d931ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yo79utWejUoi6iZnUBmTky4eFxZ4NGoo%22%3B%7D; _csrf=3fa980ef023f1c8f2382b28f67e3b2b4efa58e4261cbb158e1d781362ed82b6ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uraq9l53kXt0kQsPCVLm_fxxtDSzK4aZ%22%3B%7D; PHPSESSID=hbsm6i7d74l9nmdledorbjafqn; advanced-backend=9ctms06lvdcodn36v4sonmt2j7; _identity-backend=a569f35123839eac883db6a3f0a1ef37b2f41a4d4e2d195c8c2221a485442480a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22JrgCWLwGABr5KlPMgAlleJZ4J4exGVAZ%22%2C2592000%5D%22%3B%7D; _csrf-backend=d142d4bee51d291b8ab0c4d916f9d0b72dd288e32c946065ceb70dcf208ada5aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PrE_S-G_qwFmO3WHln1NJy-WhuD30-R9%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Eclipse Adoptium\\jdk-19.0.2.7-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVM;C:\\Program Files\\nodejs;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php8.1.28;C:\\wamp64\\bin\\php\\php7.4.33;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\ServiceNow\\agent-client-collector\\bin;C:\\Program Files\\ServiceNow\\agent-client-collector\\embedded\\bin;C:\\Users\\Default\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Default\\.dotnet\\tools;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.59 (Win64) PHP/8.1.28 mod_fcgid/2.3.10-dev Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.59 (Win64) PHP/8.1.28 mod_fcgid/2.3.10-dev'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/projects/clinicAppointment/backend/web/index.php'
+    'REMOTE_PORT' => '58014'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsettings'
+    'REQUEST_URI' => '/projects/clinicAppointment/backend/web/index.php?r=site%2Fsettings'
+    'SCRIPT_NAME' => '/projects/clinicAppointment/backend/web/index.php'
+    'PHP_SELF' => '/projects/clinicAppointment/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1750879416.4308
+    'REQUEST_TIME' => 1750879416
+]
