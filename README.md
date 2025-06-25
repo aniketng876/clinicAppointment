@@ -13,7 +13,7 @@ A robust doctor appointment system built on the Yii2 Advanced Project Template.
 1. **Clone the repository**
    ```
    git clone https://github.com/aniketng876/clinicAppointment
-   cd doctorAppointment
+   cd clinicAppointment
    ```
 2. **Install dependencies**
    ```
